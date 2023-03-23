@@ -1,0 +1,43 @@
+GET http://localhost:3001/
+###
+
+// GET movie names API 
+GET http://localhost:3001/movies/
+###
+
+//POST newmovie API 
+POST http://localhost:3001/movies/
+Content-Type: application/json
+
+{
+  "directorId": 6,
+  "movieName": "Jurassic Park",
+  "leadActor": "Jeff Goldblum"
+}
+###
+
+//GET movie API 
+GET http://localhost:3001/movies/46/
+###
+
+//PUT movie API 
+PUT http://localhost:3001/movies/1/
+Content-Type: application/json
+
+{
+  "directorId": 24,
+  "movieName": "Thor",
+  "leadActor": "Christopher Hemsworth"
+}
+###
+
+//DELETE movie API 
+DELETE http://localhost:3001/movies/1/ 
+###
+
+// GET directors API 
+GET http://localhost:3001/directors/
+###
+
+// GET all movie names directed by specific director 
+GET http://localhost:3001/directors/6/movies/
